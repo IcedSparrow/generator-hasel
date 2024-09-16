@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Generator haseł online, który umożliwia łatwe tworzenie silnych haseł z opcjami jak wielkie litery, małe litery, cyfry i symbole.">
+  <meta name="keywords" content="generator haseł, silne hasło, tworzenie haseł, bezpieczne hasło, password generator, strong passwords">
+  <meta name="author" content="Twoje Imię i Nazwisko">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="PL">
+  <title>Generator Haseł - Bezpieczne i Silne Hasła Online</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="password.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div class="password-generator">
+      <h1>Generator Haseł</h1>
+      <div class="password-display">
+        <input type="text" id="password" readonly>
+        <button onclick="copyPassword()" class="copy-btn">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <label for="length">Długość hasła:</label>
+      <input type="number" id="length" value="20" min="6" max="20">
+      <div class="options">
+        <label><input type="checkbox" id="uppercase" checked> Włącz wielkie litery</label>
+        <label><input type="checkbox" id="lowercase" checked> Włącz małe litery</label>
+        <label><input type="checkbox" id="numbers" checked> Włącz cyfry</label>
+        <label><input type="checkbox" id="symbols" checked> Włącz symbole</label>
+      </div>
+      <button id="generate" onclick="generatePassword()">Generuj Hasło</button>
+    </div>
+  </div>
+  <div id="toast-container"></div>
+  
+  <!-- External JavaScript -->
+  <script src="password.js"></script>
+</body>
+</html>
