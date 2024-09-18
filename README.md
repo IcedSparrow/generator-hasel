@@ -40,4 +40,4 @@ Aby zainstalować Generator Haseł, wykonaj poniższe kroki:
 
 1. Sklonuj repozytorium:
    ```bash
-   (https://github.com/IcedSparrow/generator-hasel.git)
+   https://github.com/IcedSparrow/generator-hasel.git
